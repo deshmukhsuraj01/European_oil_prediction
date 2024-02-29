@@ -10,9 +10,9 @@ from tensorflow.keras.layers import Dense, LSTM
 from sklearn.preprocessing import MinMaxScaler
 
 # Load the model
-model_path = 'forecast_model.pkl'
-with open(model_path, 'rb') as file:
+with open('forecast_model.pkl', 'rb') as file:
     model = pickle.load(file)
+
 
 # Load dataset to plot alongside predictions
 df1 = pd.read_csv("EuropeanBrent.csv")
